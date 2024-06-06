@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Layout, ConfigProvider, Drawer } from 'antd';
+import './custom.css'
 import styles from './AppLayout.module.scss';
 import Navbar from '../Navbar/Navbar';
 import About from '../About/About';

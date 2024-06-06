@@ -1,22 +1,34 @@
 'use client'
 
-import React from 'react';
-import { Typography, Button } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Typography, Button, Image } from 'antd';
 import { MenuOutlined, InstagramOutlined, WhatsAppOutlined, PhoneOutlined } from '@ant-design/icons';
 import styles from './Navbar.module.scss';
 import './custom.css';
-import { useMediaQuery } from 'react-responsive';
 import NavbarMobile from './NavbarMobile';
 
 const { Title } = Typography;
 
 export default function Navbar({ showMobileDrawer }) {
-  const isMobileOrTablet = useMediaQuery({ query: '(max-width: 1224px)' });
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileOrTablet(window.innerWidth <= 1224);
+    };
+
+    handleResize(); // Инициализация состояния при монтировании компонента
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div className={styles.navbarWrapper}>
       <div className={styles.logoWrapper}>
-        <img src='/logoNOTP.png' alt="Logo" className={styles.logo} />
+        <Image preview={false} src='/logoNOTP.png' alt="" className={styles.logo} />
         <Title level={1} className={styles.logoText}>STATUS PARTNERS</Title>
       </div>
       {isMobileOrTablet ? (
