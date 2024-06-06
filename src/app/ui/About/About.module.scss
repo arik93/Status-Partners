@@ -1,0 +1,66 @@
+.container {
+  margin-top: 115px;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.subheading {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.cardTitleContainer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cardTitle {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.customListItemContainer {
+  margin-left: 20px;
+}
+
+.customListItem {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.textContent {
+  width: 50%;
+}
+
+.cardWrapper {
+  width: 350px;
+}
+
+@media (max-width: 1224px) {
+  .textContent {
+    width: 100%;
+  }
+  
+  .videoContent {
+    width: 100%;
+  }
+
+  .flexVideoContent {
+    flex-direction: column-reverse;
+  }
+
+  .cardWrapper {
+    width: 100%;
+  }
+}

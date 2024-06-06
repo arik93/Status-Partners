@@ -1,0 +1,7 @@
+.awssld__timer {
+  --timer-background-color: transparent !important;
+}
+
+.ant-modal-close {
+  color: #ECF0F1 !important;
+}

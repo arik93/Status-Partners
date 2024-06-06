@@ -1,0 +1,47 @@
+.menuItemsText {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.navbarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar {
+  min-width: 533px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  width: 240px;
+}
+
+.logo {
+  height: 60px;
+  // width: 150px;
+}
+
+.logoText {
+  margin-bottom: 0px !important;
+  font-size: 16px !important;
+  margin-left: 15px;
+}
+
+.contactsWrapper {
+  width: 240px;
+}
+
+.mobileMenuButton {
+  background-color: #474b4f;
+  &:hover {
+    background-color: #3c4044 !important;
+  }
+  &:active {
+    background-color: #3c4044 !important;
+  }
+}

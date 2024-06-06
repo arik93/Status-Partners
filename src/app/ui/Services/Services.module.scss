@@ -1,0 +1,42 @@
+.heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 1.2em;
+}
+
+.subheading {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.highlight {
+  color: #86C232;
+}
+
+.list {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  list-style-type: disc;
+  width: 50%;
+}
+
+.titleContainer {
+  text-align: center;
+  width: 50%;
+}
+
+@media (max-width: 1224px) {
+  .flexServicesContent {
+    flex-direction: column-reverse;
+  }
+
+  .list {
+    width: 100%;
+  }
+  
+  .titleContainer {
+    width: 100%;
+    margin-bottom: 1.2em;
+  }
+}
